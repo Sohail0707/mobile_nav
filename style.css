@@ -1,3 +1,13 @@
 /* //////////////////////////////////// */
 /* ////////// Footer Section ////////// */
 /* //////////////////////////////////// */
+.footer {
+  width: 36rem;
+  position: absolute;
+  bottom: 0;
+  background: orangered;
+}
+.footer-container {
+  height: 6rem;
+  width: 100%;
+}
