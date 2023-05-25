@@ -79,7 +79,7 @@ a:is(:link, :visited) {
 .indicator::before {
   content: "";
   height: 2.6rem;
-  width: 2.5rem;
+  width: 2.6rem;
   background-color: var(--col-3);
   position: absolute;
   top: 50%;
@@ -92,7 +92,7 @@ a:is(:link, :visited) {
 .indicator::after {
   content: "";
   height: 2.6rem;
-  width: 2.5rem;
+  width: 2.6rem;
   background-color: var(--col-3);
   position: absolute;
   top: 50%;
