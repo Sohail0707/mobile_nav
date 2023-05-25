@@ -86,7 +86,7 @@ a:is(:link, :visited) {
   left: 0;
   transform: translateX(-100%);
   border-top-right-radius: 100%;
-  box-shadow: 0 -1rem 0 0 #fff;
+  box-shadow: 0 -1.2rem 0 0 #fff;
 }
 
 .indicator::after {
@@ -99,7 +99,7 @@ a:is(:link, :visited) {
   right: 0;
   transform: translateX(100%);
   border-top-left-radius: 100%;
-  box-shadow: 0 -1rem 0 0 #fff;
+  box-shadow: 0 -1.2rem 0 0 #fff;
 }
 
 .p-1 {
