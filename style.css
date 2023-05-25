@@ -3,7 +3,7 @@
 /* //////////////////////////////////// */
 .footer {
   width: 36rem;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   background: var(--col-3);
 }
