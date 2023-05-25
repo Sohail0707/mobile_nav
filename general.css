@@ -5,6 +5,15 @@
 - Spacing system (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
+
+:root {
+  --col-1: #fc8686;
+  --col-2: #faa8c5;
+  --col-3: #ddd;
+  --col-g-1: #9775fa;
+  --col-g-2: #4dabf7;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
 * {
