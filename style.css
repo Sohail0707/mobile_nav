@@ -27,8 +27,14 @@
   width: 6rem;
 }
 
-.nav-link {
-  height: 100%;
+.nav-link:is(:link, :visited) {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111;
+  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .footer-icon {
@@ -38,7 +44,7 @@
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s;
-  color: #111;
+
   z-index: 5;
   /* color: transparent;
   background-image: linear-gradient(to bottom, var(--col-g-1), var(--col-g-2));
@@ -62,16 +68,6 @@
 .active .text-f {
   opacity: 1;
   transform: translateY(0.4rem);
-}
-
-a:is(:link, :visited) {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 300;
 }
 
 .indicator {
