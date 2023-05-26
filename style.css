@@ -34,8 +34,12 @@
   top: 50%;
   transform: translateY(-50%);
   transition: all 0.3s;
+  color: #111;
   z-index: 5;
-  color: #000;
+  /* color: transparent;
+  background-image: linear-gradient(to bottom, var(--col-g-1), var(--col-g-2));
+  -webkit-background-clip: text;
+  background-clip: text; */
 }
 
 .text-f {
