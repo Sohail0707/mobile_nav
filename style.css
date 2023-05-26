@@ -21,8 +21,9 @@
   margin: 0 3rem;
 }
 
-.icon {
+.footer-icon {
   width: 2rem;
+  height: 2rem;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -44,7 +45,7 @@
   width: 6rem;
 }
 
-.active .icon {
+.active .footer-icon {
   top: 0;
 }
 
