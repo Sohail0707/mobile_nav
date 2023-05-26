@@ -78,28 +78,28 @@ a:is(:link, :visited) {
 
 .indicator::before {
   content: "";
-  height: 2.6rem;
-  width: 2.6rem;
+  height: 2.5rem;
+  width: 3.5rem;
   background-color: var(--col-3);
   position: absolute;
   top: 50%;
-  left: 0.1rem;
+  left: 0.18rem;
   transform: translateX(-100%);
   border-top-right-radius: 100%;
-  box-shadow: 0 -1.2rem 0 0 #fff;
+  box-shadow: 0 -1rem 0 0 #fff;
 }
 
 .indicator::after {
   content: "";
-  height: 2.6rem;
-  width: 2.6rem;
+  height: 2.5rem;
+  width: 3.5rem;
   background-color: var(--col-3);
   position: absolute;
   top: 50%;
-  right: 0.1rem;
+  right: 0.18rem;
   transform: translateX(100%);
   border-top-left-radius: 100%;
-  box-shadow: 0 -1.2rem 0 0 #fff;
+  box-shadow: 0 -1rem 0 0 #fff;
 }
 
 .p-1 {
