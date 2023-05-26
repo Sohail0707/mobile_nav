@@ -82,7 +82,7 @@ a:is(:link, :visited) {
   height: 5rem;
   width: 5rem;
   background: linear-gradient(to bottom, var(--col-g-1), var(--col-g-2));
-
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   z-index: 3;
 }
