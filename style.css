@@ -48,7 +48,7 @@
 /* ////////// Main Body ////////// */
 /* //////////////////////////////////// */
 .main-body {
-  padding: 3.2rem 1.6rem 14rem;
+  padding: 3.2rem 1.6rem 13rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -137,17 +137,20 @@ input[type="button"]:active {
 
 .footer::before {
   content: "";
-  height: 7rem;
+  height: 2rem;
   width: 100%;
-  background: linear-gradient(
-    to top,
-    var(--col-ui),
-    #eeeeee,
-    #eeeeee81,
-    #ffffff00
-  );
+  background: var(--col-ui);
   position: absolute;
-  top: -7rem;
+  top: -2rem;
+}
+.footer::after {
+  content: "";
+  height: 4rem;
+  width: 100%;
+  background: linear-gradient(to top, #eeeeee, #eeeeee00);
+  position: absolute;
+  top: -6rem;
+  pointer-events: none;
 }
 
 .navigation {
