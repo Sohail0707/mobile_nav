@@ -9,7 +9,8 @@
 :root {
   --col-1: #fc8686;
   --col-2: #faa8c5;
-  --col-3: #e6e6e6;
+  --col-ui: #e6e6e6;
+  --col-ui-2: #fff;
   --col-g-1: #9775fa;
   --col-g-2: #4dabf7;
 }
@@ -37,7 +38,7 @@ body {
 }
 
 main {
-  background: #fff;
+  background: var(--col-ui);
   height: 100vh;
   width: 36rem;
   position: relative;
