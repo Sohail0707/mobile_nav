@@ -44,6 +44,74 @@
 }
 
 /* //////////////////////////////////// */
+/* ////////// Main Body ////////// */
+/* //////////////////////////////////// */
+.main-body {
+  padding: 3.2rem 1.6rem 6.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.sec {
+  padding: 1.6rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.sec-title {
+  font-size: 2.4rem;
+  font-weight: 300;
+  color: var(--col-ui);
+  text-transform: capitalize;
+}
+
+.sec-cta {
+  margin-top: 3.2rem;
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.cta div {
+  display: flex;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  height: 3.7rem;
+  border-radius: 0.7rem;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  padding: 0 1.6rem;
+  background: var(--col-ui);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+input[type="text"],
+input[type="number"] {
+  background: rgba(255, 255, 255, 0.4);
+}
+::placeholder {
+  color: var(--col-ui);
+}
+
+.earn-box {
+  background: linear-gradient(to bottom, #fc8686, #faa8c5);
+}
+
+.spend-box {
+  background: linear-gradient(to bottom, #ffa94d, #ffd43b);
+}
+
+/* //////////////////////////////////// */
 /* ////////// Footer Section ////////// */
 /* //////////////////////////////////// */
 .footer {
