@@ -37,7 +37,7 @@ body {
 }
 
 main {
-  background: var(--col-3);
+  background: #fff;
   height: 100vh;
   width: 36rem;
   position: relative;
