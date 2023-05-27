@@ -32,6 +32,19 @@
   color: transparent;
 }
 
+.profile {
+  padding: 0.6rem;
+  border-radius: 50%;
+  background: var(--col-ui);
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+  border: 0.1rem solid var(--col-ui-2);
+}
+
+.user {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
 /* //////////////////////////////////// */
 /* ////////// Footer Section ////////// */
 /* //////////////////////////////////// */
