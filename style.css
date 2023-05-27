@@ -28,10 +28,12 @@
 }
 
 .profile {
-  padding: 0.6rem;
-  min-height: 2.4rem;
-  min-width: 2.4rem;
+  min-height: 4rem;
+  min-width: 4rem;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--col-ui);
   border: 0.1rem solid var(--col-g-2);
 }
