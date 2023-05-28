@@ -136,20 +136,11 @@ input[type="button"]:active {
 
 .footer::before {
   content: "";
-  height: 2.5rem;
+  height: 3rem;
   width: 100%;
   background: var(--col-ui);
   position: absolute;
-  top: -2.5rem;
-}
-.footer::after {
-  content: "";
-  height: 4rem;
-  width: 100%;
-  background: linear-gradient(to top, #ffffff, #ffffff00);
-  position: absolute;
-  top: -6.4rem;
-  pointer-events: none;
+  top: -3rem;
 }
 
 .navigation {
