@@ -18,14 +18,15 @@
 }
 
 .title {
-  font-size: 3rem;
-  font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 300;
   text-transform: capitalize;
-  background: linear-gradient(to right, var(--col-g-1), var(--col-g-2));
+  /* background: linear-gradient(to right, var(--col-g-1), var(--col-g-2));
   -moz-background-clip: text;
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: transparent; */
+  color: #555;
 }
 
 .profile {
