@@ -26,7 +26,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; */
-  color: #555;
+  color: #aaa;
 }
 
 .profile {
@@ -114,15 +114,15 @@ input[type="button"]:active {
 }
 
 .bank-box {
-  background: linear-gradient(to bottom, #fc8686, #faa8c5);
+  background: linear-gradient(to bottom, #fd9e9e, #fbb9d1);
 }
 
 .spend-box {
-  background: linear-gradient(to bottom, #ffa94d, #ffd43b);
+  background: linear-gradient(to bottom, #ffba71, #ffdd62);
 }
 
 .earn-box {
-  background: linear-gradient(to bottom, #51cf66, #94d82d);
+  background: linear-gradient(to bottom, #74d985, #a9e057);
 }
 
 /* //////////////////////////////////// */
