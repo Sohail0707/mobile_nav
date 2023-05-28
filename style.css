@@ -21,7 +21,6 @@
   font-size: 3rem;
   font-weight: 400;
   text-transform: capitalize;
-  /* color: #111; */
   background: linear-gradient(to right, var(--col-g-1), var(--col-g-2));
   -moz-background-clip: text;
   -webkit-background-clip: text;
@@ -48,7 +47,7 @@
 /* ////////// Main Body ////////// */
 /* //////////////////////////////////// */
 .main-body {
-  padding: 1.6rem 1.6rem 13rem;
+  padding: 0 1.6rem 13rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -137,11 +136,11 @@ input[type="button"]:active {
 
 .footer::before {
   content: "";
-  height: 2.04rem;
+  height: 2.5rem;
   width: 100%;
   background: var(--col-ui);
   position: absolute;
-  top: -2rem;
+  top: -2.5rem;
 }
 .footer::after {
   content: "";
@@ -149,7 +148,7 @@ input[type="button"]:active {
   width: 100%;
   background: linear-gradient(to top, #ffffff, #ffffff00);
   position: absolute;
-  top: -5rem;
+  top: -6.4rem;
   pointer-events: none;
 }
 
