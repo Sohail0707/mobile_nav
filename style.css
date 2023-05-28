@@ -4,7 +4,7 @@
 .app-header {
   width: 100%;
   padding: 1.6rem;
-  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.1); */
   background: var(--col-ui);
   top: 0;
 }
@@ -48,7 +48,7 @@
 /* ////////// Main Body ////////// */
 /* //////////////////////////////////// */
 .main-body {
-  padding: 3.2rem 1.6rem 13rem;
+  padding: 1.6rem 1.6rem 13rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
@@ -63,7 +63,7 @@
 .sec-title {
   font-size: 2.4rem;
   font-weight: 300;
-  color: var(--col-ui-2);
+  color: var(--col-ui);
   text-transform: capitalize;
 }
 
@@ -105,7 +105,7 @@ input[type="number"] {
   background: rgba(255, 255, 255, 0.4);
 }
 ::placeholder {
-  color: var(--col-ui-2);
+  color: var(--col-ui);
   font-weight: 400;
 }
 
@@ -137,7 +137,7 @@ input[type="button"]:active {
 
 .footer::before {
   content: "";
-  height: 2rem;
+  height: 2.04rem;
   width: 100%;
   background: var(--col-ui);
   position: absolute;
@@ -147,9 +147,9 @@ input[type="button"]:active {
   content: "";
   height: 4rem;
   width: 100%;
-  background: linear-gradient(to top, #eeeeee, #eeeeee00);
+  background: linear-gradient(to top, #ffffff, #ffffff00);
   position: absolute;
-  top: -6rem;
+  top: -5rem;
   pointer-events: none;
 }
 
