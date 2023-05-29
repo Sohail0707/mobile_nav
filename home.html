@@ -12,21 +12,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="app-header">
-      <div class="header-container">
-        <h1 class="title">good morning.</h1>
-        <div class="profile">
-          <ion-icon name="person-outline" class="user"></ion-icon>
+    <!-- /////////////// Section Header /////////////// -->
+    <header class="header">
+      <div class="hCon">
+        <h1 class="hTitle">good morning.</h1>
+        <div class="user-img-box">
+          <ion-icon name="person-outline" class="user-icon"></ion-icon>
         </div>
       </div>
     </header>
 
-    <section class="main-body">
-      <div class="earn-box sec">
-        <h2 class="sec-title">earning</h2>
-        <div class="sec-cta">
-          <form action="" class="cta">
-            <div>
+    <!-- /////////////// Section Body /////////////// -->
+    <section class="body">
+      <div class="bEarn-con bCon">
+        <h2 class="bCon-title">earning</h2>
+        <div class="bForm-con">
+          <form action="" class="bForm">
+            <div class="bForm-box">
               <input
                 type="number"
                 name=""
@@ -57,7 +59,7 @@
                 </div>
               </div>
             </div>
-            <div>
+            <div class="bForm-box">
               <input type="button" value="cash" />
               <input type="button" value="online" />
               <input type="button" value="from bank" />
@@ -66,11 +68,11 @@
         </div>
       </div>
 
-      <div class="spend-box sec">
-        <h2 class="sec-title">spending</h2>
-        <div class="sec-cta">
-          <form action="" class="cta">
-            <div>
+      <div class="bSpend-con bCon">
+        <h2 class="bCon-title">spending</h2>
+        <div class="bForm-con">
+          <form action="" class="bForm">
+            <div class="bForm-box">
               <input
                 type="number"
                 name=""
@@ -84,7 +86,7 @@
                 placeholder="category"
                 required />
             </div>
-            <div>
+            <div class="bForm-box">
               <input type="button" value="cash" />
               <input type="button" value="online" />
               <input type="button" value="from bank" />
@@ -93,11 +95,11 @@
         </div>
       </div>
 
-      <div class="bank-box sec">
-        <h2 class="sec-title">banking</h2>
-        <div class="sec-cta">
-          <form action="" class="cta">
-            <div>
+      <div class="bBank-con bCon">
+        <h2 class="bCon-title">banking</h2>
+        <div class="bForm-con">
+          <form action="" class="bForm">
+            <div class="bForm-box">
               <input
                 type="number"
                 name=""
@@ -111,7 +113,7 @@
                 placeholder="select account"
                 required />
             </div>
-            <div>
+            <div class="bForm-box">
               <input type="button" value="withdraw" />
               <input type="button" value="diposit" />
               <!-- <input type="button" value="from bank" /> -->
