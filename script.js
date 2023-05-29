@@ -1,4 +1,4 @@
-const list = document.querySelectorAll(".list");
+const list = document.querySelectorAll(".f-list");
 const l0 = document.querySelector(".l-0");
 const l1 = document.querySelector(".l-1");
 const l2 = document.querySelector(".l-2");
@@ -37,3 +37,18 @@ function activeLink() {
 }
 
 list.forEach((item) => item.addEventListener("click", activeLink));
+
+// ////////////// Dropdown list /////////////////////
+const category = document.querySelector(".category");
+const catBox = document.querySelector(".category-box");
+const listItem = document.querySelectorAll(".cat-list ul li");
+
+category.addEventListener("click", function () {
+  catBox.classList.add("list-open");
+});
+
+listItem.forEach((item) => {
+  item.addEventListener("click", function () {
+    catBox.classList.remove("list-open");
+  });
+});
