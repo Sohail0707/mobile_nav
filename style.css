@@ -167,6 +167,7 @@ input[type="button"]:active {
 .list-open .cat-list {
   max-height: 26rem;
   background: var(--col-ui);
+  overflow-y: scroll;
   box-shadow: 0 0.3rem 0.7rem rgba(0, 0, 0, 0.15);
 }
 
