@@ -126,11 +126,13 @@ input[type="button"]:active {
   display: flex;
   flex-direction: column;
   height: 3.7rem;
+  width: 100%;
 }
 
 .category {
   position: absolute;
   cursor: pointer;
+  width: 100%;
   /* box-shadow: none; */
   z-index: 1;
 }
@@ -138,6 +140,7 @@ input[type="button"]:active {
 .cat-list {
   position: absolute;
   top: 0;
+  width: 100%;
   border-radius: 0.7rem;
   padding-top: 3.7rem;
   max-height: 0;
