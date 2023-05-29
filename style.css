@@ -105,7 +105,7 @@ input[type="number"] {
   background: rgba(255, 255, 255, 0.4);
 }
 ::placeholder {
-  color: var(--col-ui);
+  color: rgba(0, 0, 0, 0.5);
   font-weight: 400;
 }
 
@@ -114,15 +114,15 @@ input[type="button"]:active {
 }
 
 .bank-box {
-  background: linear-gradient(to bottom, #fd9e9e, #fbb9d1);
+  background: linear-gradient(to bottom, #62d4e2, #71bcf9);
 }
 
 .spend-box {
-  background: linear-gradient(to bottom, #ffba71, #ffdd62);
+  background: linear-gradient(to bottom, #ffdd62, #ffba71);
 }
 
 .earn-box {
-  background: linear-gradient(to bottom, #74d985, #a9e057);
+  background: linear-gradient(to bottom, #a9e057, #74d985);
 }
 
 /* //////////////////////////////////// */
@@ -137,11 +137,21 @@ input[type="button"]:active {
 
 .footer::before {
   content: "";
-  height: 3rem;
+  height: 2rem;
   width: 100%;
   background: var(--col-ui);
   position: absolute;
-  top: -3rem;
+  top: -2rem;
+}
+
+.footer::after {
+  content: "";
+  height: 4rem;
+  width: 100%;
+  background: linear-gradient(to top, #fff, #ffffff00);
+  position: absolute;
+  pointer-events: none;
+  top: -6rem;
 }
 
 .navigation {
