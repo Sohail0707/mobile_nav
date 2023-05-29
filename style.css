@@ -133,7 +133,6 @@ input[type="button"]:active {
   position: absolute;
   cursor: pointer;
   width: 100%;
-  /* box-shadow: none; */
   z-index: 1;
 }
 
@@ -174,6 +173,11 @@ input[type="button"]:active {
 .list-open .cat-list ul {
   opacity: 1;
   pointer-events: all;
+}
+
+.list-open .category {
+  box-shadow: none;
+  background: var(--col-ui-2);
 }
 /* //////////////////////////// */
 
