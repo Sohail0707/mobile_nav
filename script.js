@@ -45,10 +45,12 @@ const listItem = document.querySelectorAll(".cat-list ul li");
 
 category.addEventListener("click", function () {
   catBox.classList.add("list-open");
+  category.placeholder = "Search";
 });
 
 listItem.forEach((item) => {
   item.addEventListener("click", function () {
     catBox.classList.remove("list-open");
+    category.placeholder = "Category";
   });
 });

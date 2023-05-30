@@ -180,6 +180,10 @@ input[type="button"]:active {
   box-shadow: none;
   background: var(--col-ui-2);
 }
+
+.list-open .category::placeholder {
+  content: attr("search");
+}
 /* //////////////////////////// */
 
 /* //////////////////////////////////// */
