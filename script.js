@@ -47,6 +47,7 @@ const catBox = document.querySelector(".bForm-box");
 let categories = ["Salary", "Pocket money", "Real estate", "Business", "Rent"];
 const catList = document.querySelector(".cat-list");
 
+// Function to add categories /////////////////////
 function addCategory() {
   categories.forEach((item) => {
     let li = document.createElement("li");
@@ -68,6 +69,7 @@ search.addEventListener("keyup", function () {
     });
 
     addCategory();
+    selectList();
   }
 
   categories.forEach((category) => {
@@ -94,6 +96,7 @@ search.addEventListener("click", function () {
   search.placeholder = "Search";
 });
 
+// Function to close list and add text into search box
 function selectList() {
   const listItem = document.querySelectorAll(".cat-list li");
   listItem.forEach((item) => {
@@ -104,3 +107,4 @@ function selectList() {
     });
   });
 }
+selectList();
