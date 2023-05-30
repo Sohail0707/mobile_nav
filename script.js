@@ -44,12 +44,18 @@ const catBox = document.querySelector(".category-box");
 const listItem = document.querySelectorAll(".cat-list ul li");
 
 category.addEventListener("click", function () {
-  catBox.classList.add("list-open");
-  category.placeholder = "Search";
+  catBox.classList.toggle("list-open");
+  if (category.placeholder != "Search") {
+    category.placeholder = "Search";
+  } else {
+    category.placeholder = "Category";
+  }
 });
 
 listItem.forEach((item) => {
   item.addEventListener("click", function () {
+    console.log(item.innerHTML);
+    category.value = item.innerHTML;
     catBox.classList.remove("list-open");
     category.placeholder = "Category";
   });
