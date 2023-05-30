@@ -39,12 +39,16 @@ function activeLink() {
 list.forEach((item) => item.addEventListener("click", activeLink));
 
 // ////////////// Dropdown list /////////////////////
+// //////////////////////////////////////////////////
+const search = document.querySelector(".cat-search");
+const catBox = document.querySelector(".bForm-box");
+
 // Array of categories. it has to be taken from database
-let categoris = ["Salary", "Pocket money", "Real estate", "etc", "etc"];
+let categories = ["Salary", "Pocket money", "Real estate", "Business", "Rent"];
 const catList = document.querySelector(".cat-list");
 
 function addCategory() {
-  categoris.forEach((item) => {
+  categories.forEach((item) => {
     let li = document.createElement("li");
     li.textContent = item;
 
@@ -53,20 +57,50 @@ function addCategory() {
 }
 addCategory();
 
-const search = document.querySelector(".cat-search");
-const catBox = document.querySelector(".category-box");
-const listItem = document.querySelectorAll(".cat-list li");
+// Implementing search functionality /////////////////////
+search.addEventListener("keyup", function () {
+  const searchTerm = search.value.toLowerCase();
+  const listItem = document.querySelectorAll(".cat-list li");
+
+  if (searchTerm == "") {
+    listItem.forEach((item) => {
+      item.remove();
+    });
+
+    addCategory();
+  }
+
+  categories.forEach((category) => {
+    if (category.toLowerCase().startsWith(searchTerm) & (searchTerm != "")) {
+      const searchedArr = [];
+      searchedArr.push(category);
+
+      listItem.forEach((item) => {
+        item.remove();
+      });
+
+      searchedArr.forEach((item) => {
+        let li = document.createElement("li");
+        li.textContent = item;
+        catList.appendChild(li);
+        selectList();
+      });
+    }
+  });
+});
 
 search.addEventListener("click", function () {
   catBox.classList.add("list-open");
   search.placeholder = "Search";
 });
 
-listItem.forEach((item) => {
-  item.addEventListener("click", function () {
-    console.log(item.innerHTML);
-    search.value = item.innerHTML;
-    catBox.classList.remove("list-open");
-    search.placeholder = "Category";
+function selectList() {
+  const listItem = document.querySelectorAll(".cat-list li");
+  listItem.forEach((item) => {
+    item.addEventListener("click", function () {
+      search.value = item.innerHTML;
+      catBox.classList.remove("list-open");
+      search.placeholder = "Category";
+    });
   });
-});
+}
