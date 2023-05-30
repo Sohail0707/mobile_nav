@@ -39,24 +39,34 @@ function activeLink() {
 list.forEach((item) => item.addEventListener("click", activeLink));
 
 // ////////////// Dropdown list /////////////////////
-const category = document.querySelector(".category");
-const catBox = document.querySelector(".category-box");
-const listItem = document.querySelectorAll(".cat-list ul li");
+// Array of categories. it has to be taken from database
+let categoris = ["Salary", "Pocket money", "Real estate", "etc", "etc"];
+const catList = document.querySelector(".cat-list");
 
-category.addEventListener("click", function () {
-  catBox.classList.toggle("list-open");
-  if (category.placeholder != "Search") {
-    category.placeholder = "Search";
-  } else {
-    category.placeholder = "Category";
-  }
+function addCategory() {
+  categoris.forEach((item) => {
+    let li = document.createElement("li");
+    li.textContent = item;
+
+    catList.appendChild(li);
+  });
+}
+addCategory();
+
+const search = document.querySelector(".cat-search");
+const catBox = document.querySelector(".category-box");
+const listItem = document.querySelectorAll(".cat-list li");
+
+search.addEventListener("click", function () {
+  catBox.classList.add("list-open");
+  search.placeholder = "Search";
 });
 
 listItem.forEach((item) => {
   item.addEventListener("click", function () {
     console.log(item.innerHTML);
-    category.value = item.innerHTML;
+    search.value = item.innerHTML;
     catBox.classList.remove("list-open");
-    category.placeholder = "Category";
+    search.placeholder = "Category";
   });
 });
