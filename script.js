@@ -41,7 +41,7 @@ list.forEach((item) => item.addEventListener("click", activeLink));
 // ////////////// Dropdown list /////////////////////
 // //////////////////////////////////////////////////
 const search = document.querySelector(".cat-search");
-const catBox = document.querySelector(".bForm-box");
+const catBox = document.querySelector(".bForm");
 
 // Array of categories. it has to be taken from database
 let categories = ["Salary", "Pocket money", "Real estate", "Business", "Rent"];
